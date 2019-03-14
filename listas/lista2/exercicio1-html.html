@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>Lista de Exercícios 2 - Exercício 1</title>
+	</head>
+	<body>
+			<h2 align="center">Escola Virtual</h1>
+			<h3 align="center">Formulário de Pré-Matrícula</h2>
+			<hr align="left" width="500px">	
+			<form style="font-family: Arial; font-size: 12px;">
+				
+					<table width="500px" rules="groups" border="1px" cellpadding="2px">
+						<tbody>
+						<tr align="left">
+							<th colspan="4" style="padding: 4px;">Dados Pessoais:
+						</th>
+						<tr>
+							<td align="right">Nome do Aluno:</td>
+							<td colspan="3">
+								<input type="text" name="nomealuno" maxlength="55" size="40">
+							</td>
+						</tr>
+						<tr>
+							<td align="right">Nascimento (dd/mm/aaaa):</td>
+							<td colspan="3">
+								<input type="date" name="dn">
+							</td>
+						</tr>
+
+						<tr>
+							<td align="right">Nome da Mãe:</td>
+							<td colspan="3">
+								<input type="text" name="nomemae" maxlength="55" size="40">
+							</td>
+						</tr>
+
+						<tr>
+							<td align="right">Nome do Pai:</td>
+							<td colspan="3">
+								<input type="text" name="nomepai" maxlength="55" size="40">
+						</tr>
+
+						<tr>
+							<td align="right">Telefone:</td>
+							<td colspan="3">
+								DDD (<input type="number" name="ddd" min="10" max="99" style="width: 12%">) 
+								Tel: <input type="number" name="tel" min="11111111" max="999999999" style="width: 23%">
+								Ramal: <input type="number" name="ramal" min="0" max="999" style="width: 12%">
+							</td>
+						</tr>
+
+						<tr>
+							<td align="right">E-mail:</td>
+							<td colspan="3">
+								<input type="email" name="email" maxlength="55" size="40">
+							</td>
+						</tr>
+						</tbody>
+						<tbody>
+				
+						<tr align="left">
+							<th colspan="4" style="padding: 4px;">Informações de Matrícula:</th>
+						</tr>
+						<tr>
+							<td>Série</td>
+							<td>Turno:</td>
+							<td colspan="2">Atividades Extracurriculares</td>
+						</tr>
+						<tr>
+							<td>
+								<select name="serie">
+									<option value="0">Pré-escola</option>
+									<option value="1">Ensino Fundamental</option>			
+									<option value="2">Ensino Médio</option>
+									<option value="3">Graduação</option>
+									<option value="4">Pós-graduação</option>
+								</select>
+							</td>
+							<td>
+								<input type="radio" name="turno" value="manha">Manhã
+							</td>
+							<td colspan="2">
+								<input type="checkbox" name="info">Informática<br>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="radio" name="turno" value="tarde">Tarde</td>
+							<td colspan="2">
+								<input type="checkbox" name="musica">Música<br>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td colspan="2">
+								<input type="checkbox" name="balet">Balet<br>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td colspan="2">
+								<input type="checkbox" name="pintura">Pintura<br>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td colspan="2">
+								<input type="checkbox" name="judo">Judô<br>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td colspan="2">
+								<input type="checkbox" name="futebol">Futebol
+							</td>
+						</tr>
+						</tbody>
+					</table>
+					<br><center>
+						<input type="submit" value="Enviar Formulário">&nbsp;
+						<input type="reset" value="Limpar Campos">
+					</center>				
+			</form>
+	</body>
+</html>
